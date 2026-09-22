@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gavakata Software | Custom AI Automation & Software</title>
+  <meta name="description" content="Custom AI automation and business software that connects your workflow, reduces manual work, and helps your team move faster.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230c1321'/%3E%3Cpath d='M22.5 10.8A8 8 0 1 0 24 18h-8v-4h12v4a12 12 0 1 1-2.2-6.9z' fill='%236df0c2'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink: #0c1321;
+      --muted: #667085;
+      --line: #dfe5ea;
+      --paper: #f5f8f9;
+      --white: #ffffff;
+      --mint: #6df0c2;
+      --mint-dark: #0d7d65;
+      --orange: #ff7a45;
+      --shadow: 0 28px 70px rgba(12, 19, 33, .12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: "Manrope", sans-serif; color: var(--ink); background: var(--paper); line-height: 1.6; }
+    a { color: inherit; }
+    .wrap { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+    nav { height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: -.03em; text-decoration: none; font-size: 1.06rem; }
+    .mark { width: 36px; height: 36px; display: grid; place-items: center; color: var(--mint); background: var(--ink); border-radius: 10px; font-weight: 800; }
+    .nav-links { display: flex; align-items: center; gap: 26px; font-size: .9rem; font-weight: 600; }
+    .nav-links a { text-decoration: none; }
+    .button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 0 20px; border-radius: 10px; border: 1px solid var(--ink); background: var(--ink); color: var(--white); text-decoration: none; font-weight: 700; transition: .2s ease; }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(12,19,33,.16); }
+    .button.secondary { background: transparent; color: var(--ink); }
+    .button.mint { background: var(--mint); border-color: var(--mint); color: var(--ink); }
+    .hero { padding: 88px 0 82px; display: grid; grid-template-columns: 1.18fr .82fr; gap: 64px; align-items: center; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-family: "DM Mono", monospace; font-size: .77rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--orange); }
+    h1 { max-width: 760px; margin: 22px 0; font-size: clamp(3.1rem, 7vw, 6.4rem); line-height: .98; letter-spacing: -.07em; }
+    .hero-copy { max-width: 640px; color: var(--muted); font-size: 1.13rem; }
+    .hero-actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; }
+    .founder-note { margin-top: 28px; display: flex; gap: 12px; align-items: center; color: var(--muted); font-size: .86rem; }
+    .founder-note span { width: 8px; height: 8px; border-radius: 50%; background: var(--mint-dark); }
+    .system-card { position: relative; min-height: 470px; padding: 26px; border-radius: 24px; background: var(--ink); color: white; overflow: hidden; box-shadow: var(--shadow); }
+    .system-card::after { content: ""; position: absolute; width: 280px; height: 280px; right: -90px; bottom: -100px; border-radius: 50%; background: var(--mint); filter: blur(2px); opacity: .88; }
+    .card-top { display: flex; justify-content: space-between; align-items: center; font-family: "DM Mono", monospace; font-size: .72rem; color: #a7b2c5; }
+    .live { color: var(--mint); }
+    .flow { position: relative; z-index: 1; margin-top: 42px; display: grid; gap: 13px; }
+    .flow-row { display: grid; grid-template-columns: 42px 1fr auto; align-items: center; gap: 14px; padding: 16px; border: 1px solid rgba(255,255,255,.11); border-radius: 13px; background: rgba(255,255,255,.06); backdrop-filter: blur(10px); }
+    .flow-row strong { display: block; font-size: .9rem; }
+    .flow-row small { display: block; color: #9faabd; font-size: .75rem; }
+    .icon { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 9px; background: rgba(109,240,194,.12); color: var(--mint); font-family: "DM Mono", monospace; }
+    .status { font-size: .72rem; color: var(--mint); font-family: "DM Mono", monospace; }
+    .metric { position: relative; z-index: 1; margin-top: 18px; padding: 18px; border-radius: 13px; background: var(--mint); color: var(--ink); }
+    .metric small { display: block; font-family: "DM Mono", monospace; text-transform: uppercase; letter-spacing: .06em; }
+    .metric strong { font-size: 1.35rem; }
+    .strip { background: var(--white); border-block: 1px solid var(--line); }
+    .strip-inner { min-height: 90px; display: grid; grid-template-columns: 1.15fr repeat(3, 1fr); align-items: center; gap: 20px; }
+    .strip strong { font-size: .84rem; }
+    .strip span { color: var(--muted); font-size: .84rem; }
+    section { padding: 108px 0; }
+    .section-head { display: grid; grid-template-columns: .82fr 1.18fr; gap: 48px; align-items: end; margin-bottom: 44px; }
+    h2 { margin: 12px 0 0; font-size: clamp(2.25rem, 5vw, 4.4rem); line-height: 1.04; letter-spacing: -.055em; }
+    .section-head p { max-width: 600px; justify-self: end; margin: 0; color: var(--muted); font-size: 1.02rem; }
+    .offers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .offer { display: flex; flex-direction: column; min-height: 500px; padding: 28px; border: 1px solid var(--line); border-radius: 18px; background: var(--white); }
+    .offer.featured { color: var(--white); background: var(--ink); border-color: var(--ink); transform: translateY(-10px); box-shadow: var(--shadow); }
+    .offer-number { font-family: "DM Mono", monospace; color: var(--orange); font-size: .82rem; }
+    .offer h3 { margin: 34px 0 8px; font-size: 1.55rem; line-height: 1.2; letter-spacing: -.035em; }
+    .price { margin-bottom: 24px; font-weight: 800; font-size: 1.05rem; }
+    .offer p { color: var(--muted); font-size: .92rem; }
+    .offer.featured p { color: #aab4c6; }
+    .offer ul { margin: 20px 0 28px; padding: 0; list-style: none; display: grid; gap: 11px; }
+    .offer li { display: flex; gap: 10px; font-size: .88rem; }
+    .offer li::before { content: "✓"; color: var(--mint-dark); font-weight: 800; }
+    .offer.featured li::before { color: var(--mint); }
+    .offer .button { margin-top: auto; width: 100%; }
+    .work { background: var(--ink); color: var(--white); }
+    .work .section-head p { color: #aab4c6; }
+    .case { display: grid; grid-template-columns: 1.1fr .9fr; min-height: 460px; border: 1px solid rgba(255,255,255,.12); border-radius: 22px; overflow: hidden; }
+    .case-copy { padding: 48px; }
+    .product-label { font-family: "DM Mono", monospace; color: var(--mint); font-size: .8rem; }
+    .case h3 { margin: 22px 0 18px; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.06; letter-spacing: -.05em; }
+    .case p { color: #aab4c6; max-width: 610px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+    .tags span { padding: 7px 11px; border: 1px solid rgba(255,255,255,.15); border-radius: 999px; color: #d3dae5; font-size: .76rem; }
+    .case-panel { display: grid; align-content: center; gap: 13px; padding: 34px; background: #121c2e; }
+    .message { max-width: 88%; padding: 15px 17px; border-radius: 16px 16px 16px 4px; background: #223049; font-size: .84rem; }
+    .message.reply { margin-left: auto; border-radius: 16px 16px 4px 16px; background: var(--mint); color: var(--ink); }
+    .booking { margin-top: 6px; padding: 17px; border: 1px solid rgba(255,255,255,.12); border-radius: 13px; }
+    .booking strong { display: block; color: var(--mint); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .step { padding-top: 22px; border-top: 2px solid var(--line); }
+    .step span { font-family: "DM Mono", monospace; color: var(--orange); font-size: .8rem; }
+    .step h3 { margin: 24px 0 10px; font-size: 1.28rem; }
+    .step p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .cta { margin: 0 auto 90px; padding: 58px; border-radius: 24px; background: var(--mint); display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 40px; }
+    .cta h2 { max-width: 760px; font-size: clamp(2.3rem, 5vw, 4.7rem); }
+    .cta p { max-width: 630px; margin: 18px 0 0; color: #24594d; }
+    footer { padding: 26px 0 42px; }
+    .footer-inner { padding-top: 26px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 28px; color: var(--muted); font-size: .8rem; }
+    .footer-inner strong { color: var(--ink); }
+    @media (max-width: 900px) {
+      .nav-links a:not(.button) { display: none; }
+      .hero, .section-head, .case { grid-template-columns: 1fr; }
+      .hero { padding-top: 54px; gap: 42px; }
+      .section-head p { justify-self: start; }
+      .offers, .steps { grid-template-columns: 1fr; }
+      .offer { min-height: 0; }
+      .offer.featured { transform: none; }
+      .strip-inner { grid-template-columns: 1fr 1fr; padding: 22px 0; }
+      .cta { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .wrap { width: min(100% - 28px, 1180px); }
+      nav { height: 68px; }
+      .brand .name { max-width: 130px; line-height: 1.1; }
+      .nav-links .button { min-height: 42px; padding: 0 13px; font-size: .8rem; }
+      h1 { font-size: 3.25rem; }
+      .hero { padding: 42px 0 58px; }
+      .system-card { min-height: 430px; padding: 18px; }
+      section { padding: 76px 0; }
+      .strip-inner { grid-template-columns: 1fr; gap: 8px; }
+      .case-copy, .case-panel, .cta { padding: 30px 22px; }
+      .cta { margin-bottom: 60px; }
+      .footer-inner { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="#top"><span class="mark">G</span><span class="name">Gavakata Software</span></a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#work">Our work</a>
+        <a href="#process">Process</a>
+        <a class="button" href="#contact">Book a call <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">Custom AI automation + software</div>
+        <h1>Make your business run better.</h1>
+        <p class="hero-copy">We design custom software that connects disconnected workflows, eliminates repetitive work, and gives service businesses room to grow.</p>
+        <div class="hero-actions">
+          <a class="button" href="#contact">Book a 20-minute fit call <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="#services">Explore services</a>
+        </div>
+        <div class="founder-note"><span></span>Founder-led by a career software engineer and service-business operator.</div>
+      </div>
+      <div class="system-card" aria-label="Example automated workflow">
+        <div class="card-top"><span>WORKFLOW / 004</span><span class="live">● AUTOMATED</span></div>
+        <div class="flow">
+          <div class="flow-row"><div class="icon">01</div><div><strong>New inquiry received</strong><small>Website, SMS, email or referral</small></div><div class="status">CAPTURED</div></div>
+          <div class="flow-row"><div class="icon">02</div><div><strong>AI qualifies the request</strong><small>Extracts details and checks requirements</small></div><div class="status">REVIEWED</div></div>
+          <div class="flow-row"><div class="icon">03</div><div><strong>Team approves next step</strong><small>Human oversight where it matters</small></div><div class="status">READY</div></div>
+          <div class="flow-row"><div class="icon">04</div><div><strong>Customer moves forward</strong><small>Scheduled, paid and documented</small></div><div class="status">DONE</div></div>
+        </div>
+        <div class="metric"><small>What good software creates</small><strong>Less chasing. More completed work.</strong></div>
+      </div>
+    </div>
+
+    <div class="strip">
+      <div class="wrap strip-inner">
+        <strong>Built for operationally complex businesses</strong>
+        <span>Appointment-based services</span>
+        <span>Healthcare operations</span>
+        <span>Multi-location teams</span>
+      </div>
+    </div>
+
+    <section id="services" class="wrap">
+      <div class="section-head">
+        <div><div class="eyebrow">Three ways to work together</div><h2>From unclear problem to working system.</h2></div>
+        <p>Start with the smallest engagement that produces a meaningful business result. Every project is scoped around your workflow, team and existing tools.</p>
+      </div>
+      <div class="offers">
+        <article class="offer">
+          <div class="offer-number">01 / DISCOVER</div>
+          <h3>Software Discovery Sprint</h3>
+          <div class="price">$2,500 · 7–10 business days</div>
+          <p>Turn an operational problem into a clear, buildable plan before committing to development.</p>
+          <ul><li>Team and workflow interviews</li><li>Current and proposed process maps</li><li>Clickable application prototype</li><li>MVP requirements and integrations</li><li>Roadmap, timeline and build proposal</li></ul>
+          <a class="button secondary" href="#contact">Start with discovery</a>
+        </article>
+        <article class="offer featured">
+          <div class="offer-number">02 / AUTOMATE</div>
+          <h3>AI Automation Build</h3>
+          <div class="price">Starting at $7,500</div>
+          <p>Connect your existing tools and automate the repetitive work slowing down your team.</p>
+          <ul><li>AI intake and document processing</li><li>Messaging and follow-up workflows</li><li>Scheduling and payment integrations</li><li>Internal dashboards and approvals</li><li>Secure deployment and team training</li></ul>
+          <a class="button mint" href="#contact">Discuss an automation</a>
+        </article>
+        <article class="offer">
+          <div class="offer-number">03 / BUILD</div>
+          <h3>Custom Business Platform</h3>
+          <div class="price">Starting at $25,000</div>
+          <p>Build the software your business needs when off-the-shelf products no longer fit.</p>
+          <ul><li>Customer or employee portals</li><li>Custom operations software</li><li>Multi-location and multi-user systems</li><li>Third-party platform integrations</li><li>Ongoing support available</li></ul>
+          <a class="button secondary" href="#contact">Plan a custom platform</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">Built from real operations</div><h2>We understand the work behind the software.</h2></div>
+          <p>Our products begin with real business friction—not a feature checklist. That perspective shapes every workflow, screen and integration.</p>
+        </div>
+        <article class="case">
+          <div class="case-copy">
+            <div class="product-label">FLAGSHIP PRODUCT / MAIA FRONT DESK</div>
+            <h3>An AI receptionist for tattoo professionals.</h3>
+            <p>Maia is being built to answer inquiries, qualify tattoo requests, coordinate scheduling, collect deposits, manage waivers and keep conversations moving while artists focus on their work.</p>
+            <div class="tags"><span>AI messaging</span><span>Scheduling</span><span>Deposits</span><span>Waivers</span><span>Multi-tenant SaaS</span></div>
+          </div>
+          <div class="case-panel" aria-label="Sample Maia conversation">
+            <div class="message">Hi! I’m interested in a fine-line floral tattoo on my forearm.</div>
+            <div class="message reply">I can help with that. About how large would you like it, and do you have reference images?</div>
+            <div class="message">Around 4 inches. I just uploaded two references.</div>
+            <div class="booking"><small>NEXT STEP</small><strong>Consultation ready to schedule</strong><span>Details collected · artist matched</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="wrap">
+      <div class="section-head">
+        <div><div class="eyebrow">A practical process</div><h2>Clarity before code.</h2></div>
+        <p>We learn how the work happens now, design a better path, and build in focused phases your team can actually adopt.</p>
+      </div>
+      <div class="steps">
+        <article class="step"><span>STEP 01</span><h3>Understand the bottleneck</h3><p>We interview the people doing the work and quantify the time, revenue and customer experience affected.</p></article>
+        <article class="step"><span>STEP 02</span><h3>Prototype the solution</h3><p>We map the improved workflow and create a clickable experience your team can test before development begins.</p></article>
+        <article class="step"><span>STEP 03</span><h3>Build and improve</h3><p>We deliver the highest-value version first, connect it to your existing tools and expand based on real use.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap cta">
+      <div>
+        <div class="eyebrow">Start with one costly workflow</div>
+        <h2>What is your team still doing by hand?</h2>
+        <p>Bring us one repetitive, disconnected or error-prone process. In 20 minutes, we’ll determine whether custom automation is worth exploring.</p>
+      </div>
+      <a class="button" href="mailto:hello@gavakata.com?subject=20-minute%20software%20fit%20call&body=Hi%20Garrett%2C%0A%0AI%27d%20like%20to%20discuss%20a%20workflow%20we%20may%20be%20able%20to%20automate.%0A%0ACompany%3A%0AWorkflow%3A%0ABest%20time%20to%20connect%3A">Request a fit call <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div class="footer-inner">
+      <div><strong>Gavakata Software LLC</strong><br>Custom AI automation and software.</div>
+      <div>Maia Front Desk is a product of Gavakata Software LLC.</div>
+      <div>© 2026 Gavakata Software LLC</div>
+    </div>
+  </footer>
+</body>
+</html>
