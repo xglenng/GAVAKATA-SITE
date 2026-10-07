@@ -37,7 +37,7 @@ Then visit `http://localhost:8000`.
 ## Before public launch
 
 - Purchase and connect the final business domain.
-- Activate `hello@gavakata.com` or replace it in `index.html`.
+- Activate `garrett@gavakatasoftware.com` or replace it in `index.html`.
 - Replace the email-based call-to-action with the final booking link.
 - Review pricing, service descriptions, and legal footer text.
 
