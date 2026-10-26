@@ -41,3 +41,15 @@ Then visit `http://localhost:8000`.
 - Replace the email-based call-to-action with the final booking link.
 - Review pricing, service descriptions, and legal footer text.
 
+
+## Support and policy pages
+
+- `/support/` — customer support, billing questions, and studio transaction guidance
+- `/privacy/` — privacy policy for the website and Maia
+- `/terms/` — software and website terms, including monthly subscriptions
+
+All pages use directory `index.html` files for GitHub Pages compatibility and share footer navigation. Preview with the static server above. No dependencies or build step are required.
+
+Before publishing, the business owner should review the policy text against actual operations, confirm the existing public support mailbox is monitored, confirm cancellation/refund handling and provider/data-retention practices, and obtain legal review as appropriate. The policy date is October 26, 2026; update it when adopting revisions. No subscription prices, guaranteed support response times, or new support mailboxes are invented. Publishing these pages does not configure Stripe or activate subscriptions.
+
+The Pages workflow deploys automatically on pushes to `main`. Review locally before committing/pushing. After deployment, verify all three URLs publicly before entering them in Stripe.

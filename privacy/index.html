@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy | Gavakata Software</title>
+  <meta name="description" content="How Gavakata Software handles website, account, support, and Maia information.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230c1321'/%3E%3Cpath d='M22.5 10.8A8 8 0 1 0 24 18h-8v-4h12v4a12 12 0 1 1-2.2-6.9z' fill='%236df0c2'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink: #0c1321;
+      --muted: #667085;
+      --line: #dfe5ea;
+      --paper: #f5f8f9;
+      --white: #ffffff;
+      --mint: #6df0c2;
+      --mint-dark: #0d7d65;
+      --orange: #ff7a45;
+      --shadow: 0 28px 70px rgba(12, 19, 33, .12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: "Manrope", sans-serif; color: var(--ink); background: var(--paper); line-height: 1.6; }
+    a { color: inherit; }
+    .wrap { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+    nav { height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: -.03em; text-decoration: none; font-size: 1.06rem; }
+    .mark { width: 36px; height: 36px; display: grid; place-items: center; color: var(--mint); background: var(--ink); border-radius: 10px; font-weight: 800; }
+    .nav-links { display: flex; align-items: center; gap: 26px; font-size: .9rem; font-weight: 600; }
+    .nav-links a { text-decoration: none; }
+    .button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 0 20px; border-radius: 10px; border: 1px solid var(--ink); background: var(--ink); color: var(--white); text-decoration: none; font-weight: 700; transition: .2s ease; }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(12,19,33,.16); }
+    .button.secondary { background: transparent; color: var(--ink); }
+    .button.mint { background: var(--mint); border-color: var(--mint); color: var(--ink); }
+    .hero { padding: 88px 0 82px; display: grid; grid-template-columns: 1.18fr .82fr; gap: 64px; align-items: center; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-family: "DM Mono", monospace; font-size: .77rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--orange); }
+    h1 { max-width: 760px; margin: 22px 0; font-size: clamp(3.1rem, 7vw, 6.4rem); line-height: .98; letter-spacing: -.07em; }
+    .hero-copy { max-width: 640px; color: var(--muted); font-size: 1.13rem; }
+    .hero-actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; }
+    .founder-note { margin-top: 28px; display: flex; gap: 12px; align-items: center; color: var(--muted); font-size: .86rem; }
+    .founder-note span { width: 8px; height: 8px; border-radius: 50%; background: var(--mint-dark); }
+    .system-card { position: relative; min-height: 470px; padding: 26px; border-radius: 24px; background: var(--ink); color: white; overflow: hidden; box-shadow: var(--shadow); }
+    .system-card::after { content: ""; position: absolute; width: 280px; height: 280px; right: -90px; bottom: -100px; border-radius: 50%; background: var(--mint); filter: blur(2px); opacity: .88; }
+    .card-top { display: flex; justify-content: space-between; align-items: center; font-family: "DM Mono", monospace; font-size: .72rem; color: #a7b2c5; }
+    .live { color: var(--mint); }
+    .flow { position: relative; z-index: 1; margin-top: 42px; display: grid; gap: 13px; }
+    .flow-row { display: grid; grid-template-columns: 42px 1fr auto; align-items: center; gap: 14px; padding: 16px; border: 1px solid rgba(255,255,255,.11); border-radius: 13px; background: rgba(255,255,255,.06); backdrop-filter: blur(10px); }
+    .flow-row strong { display: block; font-size: .9rem; }
+    .flow-row small { display: block; color: #9faabd; font-size: .75rem; }
+    .icon { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 9px; background: rgba(109,240,194,.12); color: var(--mint); font-family: "DM Mono", monospace; }
+    .status { font-size: .72rem; color: var(--mint); font-family: "DM Mono", monospace; }
+    .metric { position: relative; z-index: 1; margin-top: 18px; padding: 18px; border-radius: 13px; background: var(--mint); color: var(--ink); }
+    .metric small { display: block; font-family: "DM Mono", monospace; text-transform: uppercase; letter-spacing: .06em; }
+    .metric strong { font-size: 1.35rem; }
+    .strip { background: var(--white); border-block: 1px solid var(--line); }
+    .strip-inner { min-height: 90px; display: grid; grid-template-columns: 1.15fr repeat(3, 1fr); align-items: center; gap: 20px; }
+    .strip strong { font-size: .84rem; }
+    .strip span { color: var(--muted); font-size: .84rem; }
+    section { padding: 108px 0; }
+    .section-head { display: grid; grid-template-columns: .82fr 1.18fr; gap: 48px; align-items: end; margin-bottom: 44px; }
+    h2 { margin: 12px 0 0; font-size: clamp(2.25rem, 5vw, 4.4rem); line-height: 1.04; letter-spacing: -.055em; }
+    .section-head p { max-width: 600px; justify-self: end; margin: 0; color: var(--muted); font-size: 1.02rem; }
+    .offers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .offer { display: flex; flex-direction: column; min-height: 500px; padding: 28px; border: 1px solid var(--line); border-radius: 18px; background: var(--white); }
+    .offer.featured { color: var(--white); background: var(--ink); border-color: var(--ink); transform: translateY(-10px); box-shadow: var(--shadow); }
+    .offer-number { font-family: "DM Mono", monospace; color: var(--orange); font-size: .82rem; }
+    .offer h3 { margin: 34px 0 8px; font-size: 1.55rem; line-height: 1.2; letter-spacing: -.035em; }
+    .price { margin-bottom: 24px; font-weight: 800; font-size: 1.05rem; }
+    .offer p { color: var(--muted); font-size: .92rem; }
+    .offer.featured p { color: #aab4c6; }
+    .offer ul { margin: 20px 0 28px; padding: 0; list-style: none; display: grid; gap: 11px; }
+    .offer li { display: flex; gap: 10px; font-size: .88rem; }
+    .offer li::before { content: "✓"; color: var(--mint-dark); font-weight: 800; }
+    .offer.featured li::before { color: var(--mint); }
+    .offer .button { margin-top: auto; width: 100%; }
+    .work { background: var(--ink); color: var(--white); }
+    .work .section-head p { color: #aab4c6; }
+    .case { display: grid; grid-template-columns: 1.1fr .9fr; min-height: 460px; border: 1px solid rgba(255,255,255,.12); border-radius: 22px; overflow: hidden; }
+    .case-copy { padding: 48px; }
+    .product-label { font-family: "DM Mono", monospace; color: var(--mint); font-size: .8rem; }
+    .case h3 { margin: 22px 0 18px; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.06; letter-spacing: -.05em; }
+    .case p { color: #aab4c6; max-width: 610px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+    .tags span { padding: 7px 11px; border: 1px solid rgba(255,255,255,.15); border-radius: 999px; color: #d3dae5; font-size: .76rem; }
+    .case-panel { display: grid; align-content: center; gap: 13px; padding: 34px; background: #121c2e; }
+    .message { max-width: 88%; padding: 15px 17px; border-radius: 16px 16px 16px 4px; background: #223049; font-size: .84rem; }
+    .message.reply { margin-left: auto; border-radius: 16px 16px 4px 16px; background: var(--mint); color: var(--ink); }
+    .booking { margin-top: 6px; padding: 17px; border: 1px solid rgba(255,255,255,.12); border-radius: 13px; }
+    .booking strong { display: block; color: var(--mint); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .step { padding-top: 22px; border-top: 2px solid var(--line); }
+    .step span { font-family: "DM Mono", monospace; color: var(--orange); font-size: .8rem; }
+    .step h3 { margin: 24px 0 10px; font-size: 1.28rem; }
+    .step p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .cta { margin: 0 auto 90px; padding: 58px; border-radius: 24px; background: var(--mint); display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 40px; }
+    .cta h2 { max-width: 760px; font-size: clamp(2.3rem, 5vw, 4.7rem); }
+    .cta p { max-width: 630px; margin: 18px 0 0; color: #24594d; }
+    footer { padding: 26px 0 42px; }
+    .footer-inner { padding-top: 26px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 28px; color: var(--muted); font-size: .8rem; }
+    .footer-inner strong { color: var(--ink); }
+    @media (max-width: 900px) {
+      .nav-links a:not(.button) { display: none; }
+      .hero, .section-head, .case { grid-template-columns: 1fr; }
+      .hero { padding-top: 54px; gap: 42px; }
+      .section-head p { justify-self: start; }
+      .offers, .steps { grid-template-columns: 1fr; }
+      .offer { min-height: 0; }
+      .offer.featured { transform: none; }
+      .strip-inner { grid-template-columns: 1fr 1fr; padding: 22px 0; }
+      .cta { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .wrap { width: min(100% - 28px, 1180px); }
+      nav { height: 68px; }
+      .brand .name { max-width: 130px; line-height: 1.1; }
+      .nav-links .button { min-height: 42px; padding: 0 13px; font-size: .8rem; }
+      h1 { font-size: 3.25rem; }
+      .hero { padding: 42px 0 58px; }
+      .system-card { min-height: 430px; padding: 18px; }
+      section { padding: 76px 0; }
+      .strip-inner { grid-template-columns: 1fr; gap: 8px; }
+      .case-copy, .case-panel, .cta { padding: 30px 22px; }
+      .cta { margin-bottom: 60px; }
+      .footer-inner { flex-direction: column; }
+    }
+  </style>
+<link rel="canonical" href="https://gavakatasoftware.com/privacy/">
+<style>
+.page-main{max-width:820px;padding:64px 0 80px}.page-main h1{font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.08}.page-main h2{font-size:1.45rem;letter-spacing:-.025em;margin:36px 0 12px}.page-main p,.page-main li{max-width:74ch}.page-main section{padding:0}.page-main .intro{font-size:1.15rem;color:var(--muted)}.page-main .notice{padding:22px;border:1px solid var(--line);border-radius:14px;background:var(--white)}.page-links{display:flex;flex-wrap:wrap;gap:16px}.page-main a:focus-visible,nav a:focus-visible,footer a:focus-visible{outline:3px solid var(--mint-dark);outline-offset:4px}.page-main a{overflow-wrap:anywhere}nav{height:auto;min-height:78px;flex-wrap:wrap;padding-block:16px}.page-main ul{padding-left:24px}.skip-link{position:absolute;top:-100px;left:20px}.skip-link:focus{top:8px;background:white;padding:12px;z-index:10}@media(max-width:600px){.page-main{padding-top:32px}.nav-links{gap:14px;flex-wrap:wrap}}
+</style>
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a><header class="wrap"><nav aria-label="Main navigation"><a class="brand" href="/"><span class="mark" aria-hidden="true">G</span> Gavakata Software</a><div class="nav-links"><a href="/#services">Services</a><a href="/support/">Support</a></div></nav></header><main id="main" class="wrap page-main"><div class="eyebrow">Gavakata Software</div><h1>Privacy policy</h1>
+<p class="intro">This policy explains how Gavakata Software LLC handles information through this website, our support channels, and Maia Front Desk.</p><p>Last updated: October 26, 2026.</p>
+<h2>Our role and your studio’s role</h2><p>Gavakata handles website inquiries, business account information, subscription administration, and support. When a studio uses Maia to manage its clients, we process that information to provide the studio’s configured services. The studio determines its client information practices and is your first contact for questions about its appointments, messages, waivers, and purchases.</p>
+<h2>Information we handle</h2><ul><li><strong>Website and support:</strong> contact details and the information you choose to include in inquiries or support messages.</li><li><strong>Business accounts:</strong> names, email addresses, studio details, team roles, settings, and subscription records.</li><li><strong>Studio operations:</strong> client contact details, conversations, reference images or files, services, appointments, deposits, transaction records, and consent or waiver information when those features are used.</li><li><strong>Connected services:</strong> account identifiers, authorization credentials, and information needed for integrations you enable, such as messaging channels, calendars, and payments.</li><li><strong>Technical information:</strong> IP addresses, browser and device information, access times, error records, and security or activity logs generated when services are used.</li></ul>
+<h2>How information is used</h2><p>We use information to respond to inquiries, provide and maintain software, authenticate users, apply studio settings, deliver enabled messaging and scheduling features, administer subscriptions, process support requests, investigate errors or abuse, and meet legal obligations. Maia’s AI features process relevant conversation content and studio configuration to generate responses and support authorized workflows.</p>
+<h2>Service providers and disclosure</h2><p>Information is shared with providers needed to operate the features in use, including hosting, email, AI processing, messaging, calendar, payment, and form services. Depending on the integrations enabled, these may include OpenAI, Twilio, Meta, Google, Stripe, Square, and Jotform. Connected providers also apply their own terms and privacy policies. Authorized studio team members can access information according to their permissions.</p><p>We may disclose information when legally required, to investigate fraud or protect rights and safety, or in connection with a merger, acquisition, or transfer of the business, subject to applicable safeguards.</p>
+<h2>Payments</h2><p>Payment providers process card details through their payment interfaces. Maia uses payment identifiers, amounts, statuses, and related transaction details to manage records. Do not send full card numbers or banking credentials through support messages or chat.</p>
+<h2>Cookies and external resources</h2><p>This marketing website loads fonts from Google Fonts, which receives technical information such as your IP address when your browser requests those resources. Website hosting providers may keep access logs. Maia and connected services may use cookies or browser storage for sign-in, security, and workflow state. Browser settings can control cookies, but blocking required storage may affect functionality.</p>
+<h2>Retention and security</h2><p>Information is retained as needed to provide services, meet contractual and legal obligations, resolve disputes, and protect against abuse. Retention depends on the record type, studio instructions, and provider requirements; backup copies may remain for a period after deletion. We use access controls and other safeguards appropriate to the services, but no system can guarantee absolute security.</p>
+<h2>Your choices and requests</h2><p>You can contact <a href="mailto:garrett@gavakatasoftware.com">garrett@gavakatasoftware.com</a> to request access, correction, or deletion of information we handle about you, or ask questions about its use. We may verify your identity and authority before acting. Requests concerning studio-controlled client records should go to the studio; we assist it as appropriate. Rights and exceptions depend on applicable law. Unsubscribing from promotional communication does not stop necessary service or security notices.</p>
+<h2>Children and sensitive information</h2><p>Our business software accounts are intended for adults authorized to act for a business. Studios are responsible for age requirements and any parent or guardian consent needed for their services. Do not submit sensitive identity, financial, or health information unless an authorized workflow specifically requires it.</p>
+<h2>International processing and changes</h2><p>We and our providers may process information in the United States and other countries where services operate, subject to applicable requirements. We update this policy as practices change and revise the date above. Where required, we provide additional notice or obtain consent.</p><h2>Contact</h2><p>Gavakata Software LLC<br><a href="mailto:garrett@gavakatasoftware.com">garrett@gavakatasoftware.com</a><br><a href="/support/">Customer support</a></p></main><footer class="wrap"><div class="footer-inner"><div><strong>Gavakata Software LLC</strong><br>Maia Front Desk is a product of Gavakata Software LLC.</div><div class="page-links"><a href="/support/">Support</a><a href="/privacy/">Privacy policy</a><a href="/terms/">Terms of service</a></div><div>© 2026 Gavakata Software LLC</div></div></footer></body></html>
